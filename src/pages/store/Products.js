@@ -5,15 +5,9 @@ const Products = () => {
   const { products } = useProducts();
 
   return (
-    <div>
-      <div>
-        <div>
-          <div>
-            { products ? `Total de ${products.length} productos` : '' }
-          </div>
-        </div>
-      </div>
-      <div>
+    <>
+      <h2 className="mt-8 text-xl font-bold text-gray-900">Produtos frete grátis</h2>
+      <div className="mt-8 flex flex-col sm:flex-row justify-between">
         {
           products ? products.map(product => (
             <ProductItem key={ product.id } product={ product } />
@@ -21,7 +15,7 @@ const Products = () => {
             : 'Sem produtos'
         }
       </div>
-    </div>
+    </>
   );
 };
 
