@@ -3,7 +3,7 @@ import Products from './Products';
 
 const Store = () => {
   return (
-    <Layout title="Minha loja" description="Minha loja" >
+    <Layout title="Lista de produtos" description="Descrição da minha loja" >
       <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
         Minha loja
       </h1>
