@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Rooutes from './routes';
-import * as serviceWorker from './serviceWorker';
-
 import { HelmetProvider } from 'react-helmet-async';
+
+import './index.css';
+
+import ProductsContextProvider from './contexts/ProductsContext';
+
+import Rooutes from './routes';
+
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <HelmetProvider>
-    <Rooutes />
+    <ProductsContextProvider>
+      <Rooutes />
+    </ProductsContextProvider>
   </HelmetProvider>,
   document.getElementById('root')
 );
