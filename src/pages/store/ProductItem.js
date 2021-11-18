@@ -1,9 +1,18 @@
+// import { Link } from 'react-router-dom';
 import { formatNumber } from '../../helpers/utils';
 
+import { useCart } from '../../hooks/useCart';
+
 const ProductItem = ({ product }) => {
+  const { addProduct, cartItems, increase } = useCart();
+
+  const isInCart = product => {
+    return !!cartItems.find(item => item.id === product.id);
+  };
+
   return (
     <div className="border border-gray-200 rounded-lg m-1 p-1 sm:w-96 md:max-w-lg lg:w-full 
-    text-center">
+      text-center">
       <div className="relative">
         <div className="relative w-full h-72 rounded-lg overflow-hidden">
           <img
@@ -27,7 +36,7 @@ const ProductItem = ({ product }) => {
           </p>
         </div>
       </div>
-      <div className="mt-6">
+      {/* <div className="mt-6">
         <a
           href={ product.detailUrl }
           className="relative flex bg-blue-600 border border-transparent rounded-md py-2 px-8 
@@ -36,6 +45,37 @@ const ProductItem = ({ product }) => {
           Adicionar ao carrinho
           <span className="sr-only">, { product.name }</span>
         </a>
+      </div> */}
+
+
+
+      <div className="mt-6">
+        {/* <Link
+          to="/"
+          className="mt-1 text-sm text-gray-500">
+          Details
+        </Link> */}
+
+        {
+          isInCart(product) &&
+          <button
+            onClick={ () => increase(product) }
+            className="relative flex bg-blue-600 border border-transparent rounded-md py-2 px-8 
+                        items-center justify-center text-sm font-medium text-white hover:bg-blue-700">
+            Adicionar mais
+          </button>
+        }
+
+        {
+          !isInCart(product) &&
+          <button
+            onClick={ () => addProduct(product) }
+            className="relative flex bg-blue-600 border border-transparent rounded-md py-2 px-8 
+          items-center justify-center text-sm font-medium text-white hover:bg-blue-700">
+            Adicionar ao carrinho
+          </button>
+        }
+
       </div>
     </div>
   );
