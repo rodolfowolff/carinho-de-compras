@@ -5,12 +5,14 @@ import {
 } from "react-router-dom";
 
 import Store from '../pages/store';
+import Cart from "../pages/cart";
 
 const Rooutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={ <Store /> }></Route>
+        <Route exact path='/cart' element={ <Cart /> }></Route>
+        <Route exact path='/' element={ <Store /> }></Route>
       </Routes>
     </Router>
   );
