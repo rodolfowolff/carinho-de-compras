@@ -1,5 +1,5 @@
-import React from 'react';
 import Layout from '../../components/Layout';
+import Products from './Products';
 
 const Store = () => {
   return (
@@ -12,6 +12,7 @@ const Store = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Voluptatibus, quisquam.
         </p>
+        <Products />
       </div>
     </Layout>
   );
