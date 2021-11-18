@@ -5,6 +5,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import './index.css';
 
 import ProductsContextProvider from './contexts/ProductsContext';
+import CartContextProvider from './contexts/CartContext';
 
 import Rooutes from './routes';
 
@@ -13,7 +14,9 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <HelmetProvider>
     <ProductsContextProvider>
-      <Rooutes />
+      <CartContextProvider>
+        <Rooutes />
+      </CartContextProvider>
     </ProductsContextProvider>
   </HelmetProvider>,
   document.getElementById('root')
