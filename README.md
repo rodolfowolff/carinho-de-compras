@@ -1,3 +1,10 @@
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-novidades">Novidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://carinho-de-compras.vercel.app/">Visite o Site</a>
+</p>
+
 # Desafio carrinho de compras
 #### CARRINHO DE COMPRAS
 
@@ -30,8 +37,8 @@ A api (fake) é um arquivo JSON com os itens e suas devidas informações.
   <img alt="mobile" src=".github/mobileCart.png" width="50%">
 </p>
 
-## Recomendações
-#### Projeto*Projeto feito com:
+## Tecnologias
+#### Projeto feito com:
 - [React](https://reactjs.org)
 - [Tailwindcss](https://tailwindcss.com/)
 
@@ -39,7 +46,7 @@ Projeto feito com tres branch (main, style e development), basta digitar o coman
 
 ## Acesso ao desafio
 #### Para acessar clique no link abaixo:
-    swagger: https://carinho-de-compras.vercel.app/
+Se preferir acesse uma sala já criada: https://carinho-de-compras.vercel.app/
 
 ## 📝 Novidades
 
