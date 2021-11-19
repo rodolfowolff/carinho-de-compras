@@ -23,8 +23,11 @@ A api (fake) é um arquivo JSON com os itens e suas devidas informações.
 </p>
 
 <p align="center">
-
   <img alt="mobile" src=".github/mobile.png" width="50%">
+</p>
+
+<p align="center">
+  <img alt="mobile" src=".github/mobileCart.png" width="50%">
 </p>
 
 ## Recomendações
