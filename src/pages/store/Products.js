@@ -6,8 +6,8 @@ const Products = () => {
 
   return (
     <>
-      <h2 className="mt-8 text-xl font-bold text-gray-900">Produtos frete grátis</h2>
-      <div className="mt-8 flex flex-col sm:flex-row justify-between">
+      <h2 className="mt-8 text-xl font-bold text-gray-900">Produtos</h2>
+      <div className="mt-8 flex flex-col sm:flex-row sm:flex-wrap sm:justify-center">
         {
           products ? products.map(product => (
             <ProductItem key={ product.id } product={ product } />
