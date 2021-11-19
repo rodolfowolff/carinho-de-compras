@@ -1,5 +1,5 @@
 import { createContext, useState } from 'react';
-import { items } from '../services/abaixo-10-reais.json';
+import { items } from '../services/acima-10-reais.json';
 
 export const ProductsContext = createContext();
 
