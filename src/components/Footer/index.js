@@ -6,7 +6,7 @@ import LinkedInIcon from "../social-icons/linkedin";
 const Footer = () => {
   return (
     <footer>
-      <div className="flex flex-col items-center mt-16">
+      <div className="flex flex-col items-center mt-16 w-full inset-x-0 bottom-0">
         <div className="flex mb-8 space-x-4 text-gray-500">
           <div className="text-gray-500 w-6 h-6 mr-8">
             <a

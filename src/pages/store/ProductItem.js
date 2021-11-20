@@ -1,4 +1,3 @@
-// import { Link } from 'react-router-dom';
 import { formatNumber } from '../../helpers/utils';
 import { useCart } from '../../hooks/useCart';
 import { ShoppingCartIcon, PlusIcon } from '@heroicons/react/solid';
@@ -22,7 +21,7 @@ const ProductItem = ({ product }) => {
         </div>
         <div className="mt-4 h-16 flex-col flex-wrap">
           <h3 className="text-sm font-medium text-gray-900 h-full">{ product.name }</h3>
-          <p className="mt-1 text-sm text-gray-500">Quantidade: { product.quantity }</p>
+          {/* <p className="mt-1 text-sm text-gray-500">Quantidade: { product.quantity }</p> */ }
         </div>
         <div className="absolute top-0 inset-x-0 h-72 rounded-lg p-4 flex items-end justify-end overflow-hidden">
           <div
