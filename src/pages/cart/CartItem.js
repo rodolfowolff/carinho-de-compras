@@ -17,9 +17,9 @@ const CartItem = ({ product }) => {
         <div className="flex flex-col justify-between space-y-4">
 
           <div className="text-base font-semibold space-y-1">
-            <h3 className="text-gray-900">{ product.name }</h3>
-            <p className="text-gray-400 font-medium">R$ { formatNumber(product.price) }</p>
-            <p className="text-gray-900">R$ { formatNumber(product.sellingPrice) }</p>
+            <h3 className="text-lg">{ product.name }</h3>
+            <p className="text-gray-400 font-medium line-through">R$ { formatNumber(product.price) }</p>
+            <p className="text-gray-900 text-lg">R$ { formatNumber(product.sellingPrice) }</p>
           </div>
 
           <div className="flex space-x-4">
@@ -45,9 +45,7 @@ const CartItem = ({ product }) => {
             </div>
 
             <div className="flex border-l border-gray-300 pl-4">
-              <button
-                onClick={ () => increase(product) }
-              >
+              <button onClick={ () => increase(product) }>
                 <PlusIcon className="h-6 w-6 text-gray-500 border rounded-full hover:text-gray-900" />
               </button>
             </div>
