@@ -11,8 +11,8 @@ const Layout = ({ title, description, children }) => {
         <meta name="description" content={ description || "Descrição da minha loja" } />
       </Helmet>
       <Header />
-      <main className="bg-white">
-        <div className="max-w-2xl mx-auto py-1 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8">
+      <main>
+        <div className="max-w-2xl mx-auto py-1 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8 h-full">
           { children }
         </div>
       </main>
